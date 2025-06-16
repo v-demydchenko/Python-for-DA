@@ -1,0 +1,581 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/v-demydchenko/Python-for-DA/blob/main/hw_1_1_3_\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Домашнє завдання до теми \"Основи роботи з рядками та математичні операції\""
+      ],
+      "metadata": {
+        "id": "9ngpqNFm8w1a"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Створіть змінні `a`, `b`, `c` та `d`, задайте їм значення відповідно 101, 210, 111, 402, та обчисліть з допомогою Python наступний вираз:  $$ \\frac{(a+b) * c}{d} $$\n",
+        "\n",
+        "**Важливо**: тут ми маємо обчислити значення саме з використанням змінних, а не просто чисел, як би ми робили у калькуряторі. Змінні потрібні аби за бажання ми могли змінити їх значення та не переписувати код обчислення виразу, бо він буде працювати для різних значень змінних."
+      ],
+      "metadata": {
+        "id": "DEkQSeSyTum-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 101\n",
+        "b = 210\n",
+        "c = 111\n",
+        "d = 402\n",
+        "((a+b)*c)/d"
+      ],
+      "metadata": {
+        "id": "u1ICQq5L3eKH",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2b96115f-ea45-4861-f8bd-cd27964286c2"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "85.8731343283582"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікувана відповідь: 85.8731343283582"
+      ],
+      "metadata": {
+        "id": "FnBVPt7G3bcR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Якою буде остача від ділення числа 11283 на 89? Обчисліть з допомогою Python."
+      ],
+      "metadata": {
+        "id": "HI3eEYZRT4Cn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "id": "ejZc3ng_TpgY",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "895f341c-f92a-4f30-a6be-e9803857fe39"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "69"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ],
+      "source": [
+        "11283 % 89"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. Скільки цілих разів поміститься число 89 в 11283? (Або що те саме: який буде результат цілочисельного ділення 11283 на 89?)"
+      ],
+      "metadata": {
+        "id": "RO02CqdqT9oG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "11283//89"
+      ],
+      "metadata": {
+        "id": "KEUb9lO5T_PI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5582d172-bfdd-4c00-c011-0ea9319c38e7"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "126"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. Запишіть у змінну `name` ваше імʼя."
+      ],
+      "metadata": {
+        "id": "5fnIPumiT_rt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = 'Валентин'"
+      ],
+      "metadata": {
+        "id": "xP7Mbq45UFlV"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5. Запишіть у змінну `surname` ваше прізвище."
+      ],
+      "metadata": {
+        "id": "fR9TqY79UNDL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "surename = 'Демидченко'"
+      ],
+      "metadata": {
+        "id": "0qHjyMyvUOM1"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6. Сконкатенуйте імʼя та прізвище в одну фразу через пробіл. Запишіть результат у нову змінну `name_surname` та виведіть результат на екран.  "
+      ],
+      "metadata": {
+        "id": "zqKncQLwUOxh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name_surname = name + \" \" + surename\n",
+        "name_surname"
+      ],
+      "metadata": {
+        "id": "8E-blvN-UTPg",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "bd32a366-2b9c-44fa-a0a7-50d3d57ece6e"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Валентин Демидченко'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікувана відповідь (тільки з вашими даними): 'Hanna Pylieva'"
+      ],
+      "metadata": {
+        "id": "_Unl7EXlUgYn"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "7. Зробіть усі літери змінної `name_surname` заглавними використовуючи метод рядків в Python:"
+      ],
+      "metadata": {
+        "id": "z-3FI0IrUT0U"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name_surname.upper()"
+      ],
+      "metadata": {
+        "id": "9ahIwyT5UblY",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "a357b63a-a3ab-45a7-dd83-0609f197a2b7"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'ВАЛЕНТИН ДЕМИДЧЕНКО'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікувана відповідь (тільки з вашими даними): 'HANNA PYLIEVA'"
+      ],
+      "metadata": {
+        "id": "6PDcqfmdUcLo"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "8. Виведіть третю літеру вашого `name_surname`. Тут уважно, треба саме третя літера. Згадайте, з якого значення починається індексування значень в Python."
+      ],
+      "metadata": {
+        "id": "qNl8KxeXUtnL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name_surname[2]"
+      ],
+      "metadata": {
+        "id": "Tp7stqAhUvJz",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "a6570b09-3dcc-414b-8b25-2feb95397fac"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'л'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікувана відповідь (тільки з вашими даними): 'n'"
+      ],
+      "metadata": {
+        "id": "GYWHqb3UUvqk"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "pycharm": {
+          "name": "#%% md\n"
+        },
+        "id": "1f3cc1a7"
+      },
+      "source": [
+        "9. Виведіть першу та останню літеру вашого прізвища."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name_surname[0], name_surname[18]"
+      ],
+      "metadata": {
+        "id": "s1ZgN3xuUyB8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "30473983-40de-4c4c-c391-02483e52cb90"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('В', 'о')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікувана відповідь (тільки з вашими даними): ('P', 'a')"
+      ],
+      "metadata": {
+        "id": "KjlFjjhHVAt2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "10. Виведіть довжину вашого прізвища."
+      ],
+      "metadata": {
+        "id": "UYLoho3DVMt2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(name_surname)"
+      ],
+      "metadata": {
+        "id": "0TPJBh0LVA8q",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f45c9f11-3481-42e0-d84e-d93f42f5b4c4"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "19"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікувана відповідь (тільки з вашими даними): 7\n"
+      ],
+      "metadata": {
+        "id": "9FaxqvVgVRYW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "11. Виведіть кількість літер `a` у столиці Мадагаскару `Antananarivo`. Важливо врахувати всі літери, як великі, так і маленькі."
+      ],
+      "metadata": {
+        "id": "JN2wxSlGVVAj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s='Antananarivo'\n",
+        "count = s.lower().count('a')\n",
+        "print(count)"
+      ],
+      "metadata": {
+        "id": "LCeHHz9bVUgL",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c25b88fc-f3ae-4d70-fc2a-f04165b459f4"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікувана відповідь: 4"
+      ],
+      "metadata": {
+        "id": "Ux4SQiuSVo92"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "12. Створіть рядок `my_string` зі значенням: \"The quick brown fox jumps over the lazy dog!!!\".   \n",
+        "Перевірте, чи починається рядок `my_string` з \"The\" і чи закінчується він \"dog!\". Виведіть результати на екран."
+      ],
+      "metadata": {
+        "id": "mwEs0xnmVtes"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_string = \"The quick brown fox jumps over the lazy dog!!!\"\n",
+        "my_string.startswith(\"The\"), my_string.endswith(\"dog!\")"
+      ],
+      "metadata": {
+        "id": "VlXDNpXcVs59",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d4637570-647a-4dbd-900d-34ee18189481"
+      },
+      "execution_count": 52,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(True, False)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 52
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "13. Розділіть рядок `my_string` на список окремих слів, а потім з'єднайте всі слова через нижнє підкреслювання. Виведіть результат на екран."
+      ],
+      "metadata": {
+        "id": "Yc-UwtqvV_h0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_string.split(\" \")"
+      ],
+      "metadata": {
+        "id": "m5I48Ii-WDSK",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2d8bf468-f403-4429-a3a2-3b8c236588cd"
+      },
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog!!!']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 61
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"_\".join(['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog!!!']))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F1yXVBvEJi40",
+        "outputId": "3e4bb2fa-5fab-4f7a-9d78-ed53cacdc910"
+      },
+      "execution_count": 63,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The_quick_brown_fox_jumps_over_the_lazy_dog!!!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Очікуваний результат: `The_quick_brown_fox_jumps_over_the_lazy_dog!!!`"
+      ],
+      "metadata": {
+        "id": "UqvD1_jIXRhx"
+      }
+    }
+  ]
+}
